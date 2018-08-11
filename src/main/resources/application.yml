@@ -8,8 +8,5 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          uri: https://github.com/mjr86/cloud-config/tree/master/
-          searchPaths: config/*
-          username: mjr86
-          password: mjrflu1902
-            
+          uri: https://github.com/mjr86/cloud-config/
+          searchPaths: config/*       
