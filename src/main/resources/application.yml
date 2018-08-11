@@ -4,5 +4,12 @@ server:
 spring:
   cloud:
     config:
+      allowOverride: true
       server:
-        searchPaths: 'configs/'
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/mjr86/cloud-config/tree/master/
+          searchPaths: config/*
+          username: mjr86
+          password: mjrflu1902
+            
