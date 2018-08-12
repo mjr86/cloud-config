@@ -17,4 +17,15 @@ spring:
       # To be updated in real production usage!
       ddl-auto: none
     show-sql: true
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
     
